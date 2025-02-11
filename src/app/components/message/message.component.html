@@ -1,0 +1,35 @@
+<p class="text-2xl md:text-4xl font-bold text-center mb-6 p-2 text-rose-700">
+  {{ message }}
+</p>
+<div class="sm:flex sm:gap-6 flex-col items-center p-2">
+  <div class="bg-rose-100 p-6 rounded-lg shadow-md w-full sm:w-[70%]">
+    <h3 class="text-center text-lg md:text-xl font-semibold mb-4">Hey Baby,</h3>
+    <p class="text-rose-800 leading-relaxed">
+      I remembered the day I saw you and you decided to offer me a ride. You
+      told me your name, and I had to stick it to my brain because I was always
+      looking forward to seeing you once again,I always prayed and hoped to see
+      you drive by and just to say hi to me.God answered me and you drove past
+      me one Saturday with the way I'm always looking weird with my dressings 😹
+      Asked if I remembered your name and I told you.Asked for my number deep
+      down, and I was happy because I knew you're mine already.And ever since
+      we've been together, I have no form of regrets of starting a relationship
+      with you. Whenever your message pops up on my screen, there's this joy in
+      me, like a 2 year old child getting a sweet from her mum😹🥹 You bring me
+      joy and happiness, and you put a smile on my face every single day.Always
+      look out for me.Thank you for bringing out the best in me, Pappi❤
+    </p>
+    <p class="mt-4 text-rose-700">Happy Valentine's Day, my love</p>
+    <p class="mt-6">I'm hoping to do more of this with you 😚❤</p>
+  </div>
+
+  <div class="mt-8 relative w-[400px] h-[500px] bg-red-500 flex justify-center">
+    <div
+      *ngFor="let image of images; let i = index"
+      class="absolute w-full h-full transition-opacity duration-1000"
+      [class.opacity-100]="currentIndex === i"
+      [class.opacity-0]="currentIndex !== i"
+    >
+      <img [src]="image" alt="Couple Photo" class="heart-shaped-image" />
+    </div>
+  </div>
+</div>
