@@ -32,7 +32,7 @@ export class MessageComponent {
     this.startCarousel();
     const messageId = this.route.snapshot.paramMap.get('id');
     if (messageId === 'love123') {
-      this.message = 'To the LOVE OF MY LIFE🥰';
+      this.message = '';
     } else {
       this.message = 'Welcome to your Valentine’s message!';
     }
